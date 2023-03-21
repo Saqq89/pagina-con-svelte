@@ -7,7 +7,14 @@ import {onMount} from 'svelte';
 import { darkmode } from './store/store.js';
 
 import {v4} from 'uuid';
-    let notes = [];
+    let notes = [
+        {
+            "id":0,
+            "title":"Bienvenido",
+            "color":"#FF7878",
+            "text":"En este espacio puedes crear, y eliminar las notas que quieras, disfruta!"
+        }
+    ];
     let copyNotes = [...notes];
 
     $: count = notes.length;
